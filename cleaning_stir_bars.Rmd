@@ -1,0 +1,36 @@
+---
+title: "Cleaning stir bars"
+author: "omidalam"
+date: "8/8/2018"
+output:
+  html_document:
+    df_print: paged
+---
+# Introduction
+
+This protocol is for cleaning stir bars used in emulsion PCR.
+This protocol was modified based on arbor biosciences Immortal Library protocol Version 1.4. 
+The [recent version](http://www.arborbiosci.com/wp-content/uploads/2018/05/myTags-Immortal-Protocol-v1.5.pdf) of their protocol is using a debubbling approach.
+
+# Materials
+
+1. Pivot stir bar 
+  + 3x8mm; Sigma-Alderich; Cat no. Z329061
+2. Soap
+3. Concentrated HCl
+
+# Procedure
+
+1. Add 5 mL of 10% soap solution in 15mL conical tube. Soad used stir bars for >10 min.
+  + Process all stir bars together.
+2. Wash the stir bars with DI water to compltely remove the soap.
+  + No soap bubbles when shaking.
+3. Change gloves
+4. In fume hood add concentrated HCl (12.1 N) to cover the stir bars. 
+  + Close the lid, shake and let stand for 10 min.
+4. In fume hood, open the cap and discard acid into the acid waste container.
+5. Change gloves
+6. Wash stir bars throughly with deionized water to completely remove any residual HCl.
+7. In fume hood, spread stir bars on Kimwipes, turn on UV and let dry (~10 min)
+8. Change gloves.
+9. Store stir bars in 15ml conical tubes.
