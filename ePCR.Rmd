@@ -1,0 +1,72 @@
+---
+title: "Preparing and labelling probe from a complex oligo library"
+author: "omidalam"
+date: "Last updated: 8/8/2018"
+output: html_document
+---
+
+```{r setup}
+library(knitr)
+library(kableExtra)
+```
+
+---
+
+## Introduction:
+
+This protocol employs emulsion PCR (ePCR) to enrich sub libraries from a complex oligo library. I have prepared this protocol based on [ _"Amplification of complex gene libraries by emulsion PCR"_ ](https://www.ncbi.nlm.nih.gov/pubmed/16791213) _R. William, et.al, Nature Methods_[^1] and _"Preparing Single-Stranded Labelled Probes from MYtags Immortal Lirary"_[^2], Arbor Biosciences.
+Labelling protocol is based terminal transferase protocol from Roche. 
+
+### Materials
++ Oligo nucleotide library
++ Enrichment primer sets
++ Nuclease-free water
++ Span 80 (Sigma S6760)
++ Tween 80 (Sigma P5188)
++ Triton X-100 (Sigma T8787)
++ Minral Oil (Sigma M5904)
++ Bovine Serum Albumin (BSA) (Sigma B6917)
++ diethyl ether 
+
+
+### Equipments
++ BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061)
++ Magnetic stirrer with speed control (Burrell Scientific)
++ PCR cleanup kit
+
+-----
+
+## Procedure
+
+###Before you begin!
+
+#### Prepare library
+1. Prepare a stock solution of your library. 
+2. Resuspend at 1 ng/μl in 10 mM Tris-HCl pH 7.5 or nuclease-free water. 
+    + Keep the stock at -80˚C.
+3. Prepare working stock aliquots (0.07 ng/μl) by diluting 2 μl of immortal library in 28 μl nuclease-free water.
+
+#### Prepare primers
++ Prepare forward and reverse primers working stocks(10µM) by diluting the 100µM stock in nuclease-free water.
+
+#### Prepare water saturated diethyl ether.
++ Mix 100 ml of diethyl ether with 100 ml of nuclease-free water in a glass bottle by shaking for 30s. Allow the phases to settle before use (the top phase is diethyl ether).
++ The water saturated solvent can be stored at RT for 3 months.
+
+### Preparing mineral phase
+
+1. Prepare the oil-surfactant mixture by througly mixing the following components in a 50ml conical tube.
+
+```{r, echo=FALSE}
+oil_phase<-data.frame(Component= c("Span 80","Tween 80", "Triton X-100", "Mineral oil"), Amount=c("2.25ml", "200µl", "25µl", "to 50ml"),Final_conc=c("4.5% (vol/vol)","0.4% (vol/vol)","0.05% (vol/vol)",""))
+oil_phase %>%
+  kable(escape=FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","hover","striped", full_width = F, position="float-right"))
+  
+```
+
+2. Transfer 400µl of the oil-surfactant mixure to a CryoTube vial, and add a pre-cleaned(See ["Cleaning stir bars"](./cleaning_stir_bars.html)) 3x8 mm stir bar.
+
+
+[^1]: https://www.ncbi.nlm.nih.gov/pubmed/16791213
+[^2]: Version 1.4
