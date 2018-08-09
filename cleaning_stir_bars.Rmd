@@ -1,8 +1,9 @@
 ---
 title: "Cleaning stir bars"
-author: "omidalam"
-date: "Last Updated: 8/8/2018"
+author: "Omid Gholamalamdari"
+date: 'Last Updated: 8/8/2018'
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---
