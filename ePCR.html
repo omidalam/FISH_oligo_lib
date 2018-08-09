@@ -124,13 +124,11 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Preparing and labelling probe from a complex oligo library</h1>
 <h4 class="author"><em>omidalam</em></h4>
-<h4 class="date"><em>8/8/2018</em></h4>
+<h4 class="date"><em>Last updated: 8/8/2018</em></h4>
 
 </div>
 
 
-<pre class="r"><code>library(knitr)
-library(kableExtra)</code></pre>
 <hr />
 <div id="introduction" class="section level2">
 <h2>Introduction:</h2>
@@ -152,15 +150,12 @@ library(kableExtra)</code></pre>
 <div id="equipments" class="section level3">
 <h3>Equipments</h3>
 <ul>
-<li>BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061)</li>
+<li>BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061). pre-cleaned (See <a href="./cleaning_stir_bars.html">“Cleaning stir bars”</a>).</li>
 <li>Magnetic stirrer with speed control (Burrell Scientific)</li>
 <li>PCR cleanup kit</li>
 </ul>
 <hr />
 </div>
-</div>
-<div id="procedure" class="section level2">
-<h2>Procedure</h2>
 <div id="before-you-begin" class="section level3">
 <h3>Before you begin!</h3>
 <div id="prepare-library" class="section level4">
@@ -188,8 +183,11 @@ library(kableExtra)</code></pre>
 </ul>
 </div>
 </div>
-<div id="preparing-mineral-phase" class="section level3">
-<h3>Preparing mineral phase</h3>
+</div>
+<div id="procedure" class="section level2">
+<h2>Procedure</h2>
+<div id="prepare-epcr-mix." class="section level3">
+<h3>Prepare ePCR mix.</h3>
 <ol style="list-style-type: decimal">
 <li>Prepare the oil-surfactant mixture by througly mixing the following components in a 50ml conical tube.</li>
 </ol>
@@ -203,7 +201,7 @@ Component
 Amount
 </th>
 <th style="text-align:left;">
-Final_conc
+Final concentration
 </th>
 </tr>
 </thead>
@@ -254,8 +252,136 @@ to 50ml
 </tbody>
 </table>
 <ol start="2" style="list-style-type: decimal">
-<li>Transfer 400µl of the oil-surfactant mixure to a CryoTube vial, and add a pre-cleaned(See <a href="./cleaning_stir_bars.html">“Cleaning stir bars”</a>) 3x8 mm stir bar.</li>
+<li>Transfer 400µl of the oil-surfactant mixure to a CryoTube vial, and add a 3x8 mm stir bar(pre-cleaned)</li>
+<li>Begin stiring the mixture at 1,000 r.p.m. on the magnetic stirrer.</li>
+<li>Prepare the aqueous phase for the emulsion by mixing the following:</li>
 </ol>
+<table class="table table-bordered table-hover table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Component
+</th>
+<th style="text-align:left;">
+Amount
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+10X PCR buffer
+</td>
+<td style="text-align:left;">
+26µl
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BSA (100 mg/ml stock)
+</td>
+<td style="text-align:left;">
+26µl
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Forward primer (10µM stock)
+</td>
+<td style="text-align:left;">
+7.8µl
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Reverse primer (10µM stock)
+</td>
+<td style="text-align:left;">
+7.8µl
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+dNTPs (5mM stock)
+</td>
+<td style="text-align:left;">
+10.4µl
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DNA polymerase
+</td>
+<td style="text-align:left;">
+5.2µl
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Template DNA
+</td>
+<td style="text-align:left;">
+≤10^9 molecules (1.66 fmol)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nuclease-free water
+</td>
+<td style="text-align:left;">
+to 260µl
+</td>
+</tr>
+</tbody>
+</table>
+<ol start="5" style="list-style-type: decimal">
+<li>Add 200µl of the aqueous phase to the oil-surfactant mixure in dropwise manner over a period of 1.5 min.
+<ul>
+<li>After the addition is complete, continue stirring for another 5 minutes.</li>
+<li>Keep the aqueous phase leftovers as the without emulsion contol.</li>
+</ul></li>
+<li>Pipet the emulsion into the wells of a PCR plate as 10 aliquots of 50 µl.
+<ul>
+<li>Pipet 50 µl of the aqueos phase left over to a well as nonemulsified control.</li>
+<li>__Overlay the emulsified and nonemulsified reactions with mineral oil. ### PCR</li>
+</ul></li>
+<li>Subject the PCR plate to the following program.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Cycle number</th>
+<th>Denaturation</th>
+<th>Annealing</th>
+<th>Polymerization</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2 min at 95˚C</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2-26</td>
+<td>30 sec at 95˚C</td>
+<td>30 sec at A<sup>1</sup></td>
+<td>B<sup>1</sup> min at 72˚C</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td></td>
+<td></td>
+<td>10 min at 72 ˚C</td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <em>A</em> = <em>C</em>- 5˚C where <em>C</em> is the Tm of the primer with lowest Tm. <em>B</em> is equal to length of amplification in kbp.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Place the nonemulsified reaction aside.</li>
+</ol>
+<p>–&gt; <strong>Pause Point:</strong> You can keep both the w and w/o emulsion reaction at 4˚C overnight! <em>not sure about this!!</em> ###</p>
 </div>
 </div>
 <div class="footnotes">

@@ -5,7 +5,7 @@ date: "Last updated: 8/8/2018"
 output: html_document
 ---
 
-```{r setup}
+```{r setup, echo =F}
 library(knitr)
 library(kableExtra)
 ```
@@ -30,13 +30,11 @@ Labelling protocol is based terminal transferase protocol from Roche.
 
 
 ### Equipments
-+ BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061)
++ BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061). pre-cleaned (See ["Cleaning stir bars"](./cleaning_stir_bars.html)).
 + Magnetic stirrer with speed control (Burrell Scientific)
 + PCR cleanup kit
 
 -----
-
-## Procedure
 
 ###Before you begin!
 
@@ -53,19 +51,71 @@ Labelling protocol is based terminal transferase protocol from Roche.
 + Mix 100 ml of diethyl ether with 100 ml of nuclease-free water in a glass bottle by shaking for 30s. Allow the phases to settle before use (the top phase is diethyl ether).
 + The water saturated solvent can be stored at RT for 3 months.
 
-### Preparing mineral phase
+## Procedure
+
+### Prepare ePCR mix.
 
 1. Prepare the oil-surfactant mixture by througly mixing the following components in a 50ml conical tube.
 
 ```{r, echo=FALSE}
 oil_phase<-data.frame(Component= c("Span 80","Tween 80", "Triton X-100", "Mineral oil"), Amount=c("2.25ml", "200µl", "25µl", "to 50ml"),Final_conc=c("4.5% (vol/vol)","0.4% (vol/vol)","0.05% (vol/vol)",""))
+colnames(oil_phase)<- c("Component","Amount", "Final concentration")
 oil_phase %>%
   kable(escape=FALSE) %>%
   kable_styling(bootstrap_options = c("bordered","hover","striped", full_width = F, position="float-right"))
   
 ```
 
-2. Transfer 400µl of the oil-surfactant mixure to a CryoTube vial, and add a pre-cleaned(See ["Cleaning stir bars"](./cleaning_stir_bars.html)) 3x8 mm stir bar.
+2. Transfer 400µl of the oil-surfactant mixure to a CryoTube vial, and add a 3x8 mm stir bar(pre-cleaned)
+3. Begin stiring the mixture at 1,000 r.p.m. on the magnetic stirrer.
+4. Prepare the aqueous phase for the emulsion by mixing the following:
+
+```{r, echo=F}
+aqua_phase<- data.frame(Component=c("10X PCR buffer",
+                                    "BSA (100 mg/ml stock)",
+                                    "Forward primer (10µM stock)",
+                                    "Reverse primer (10µM stock)",
+                                    "dNTPs (5mM stock)",
+                                    "DNA polymerase",
+                                    "Template DNA",
+                                    "Nuclease-free water"),
+                        Amount=c("26µl",
+                                 "26µl",
+                                 "7.8µl",
+                                 "7.8µl",
+                                 "10.4µl",
+                                 "5.2µl",
+                                 "≤10^9 molecules (1.66 fmol)",
+                                 "to 260µl"))
+aqua_phase %>%
+  kable(escape=FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","hover","striped", full_width = F, position="float-right"))
+```
+5. Add 200µl of the aqueous phase to the oil-surfactant mixure in dropwise manner over a period of 1.5 min.
+    + After the addition is complete, continue stirring for another 5 minutes.
+    + Keep the aqueous phase leftovers as the without emulsion contol.
+6. Pipet the emulsion into the wells of a PCR plate as 10 aliquots of 50 µl.
+    + Pipet 50 µl of the aqueos phase left over to a well as nonemulsified control.
+    + __Overlay the emulsified and nonemulsified reactions with mineral oil.
+### PCR
+
+7. Subject the PCR plate to the following program.
+
+| Cycle number | Denaturation | Annealing | Polymerization |
+|--------------|--------------|-----------|----------------|
+| 1            | 2 min at 95˚C |           |                |
+| 2-26        | 30 sec at 95˚C | 30 sec at A^1^| B^1^ min at 72˚C|
+| 27          |               |           |  10 min at 72 ˚C|
+
+^1^ _A_ = _C_- 5˚C where _C_ is the Tm of the primer with lowest Tm. _B_ is equal to length of amplification in kbp.
+
+8. Place the nonemulsified reaction aside.
+
+--> __Pause Point:__ You can keep both the w and w/o emulsion reaction at 4˚C overnight!
+_not sure about this!!_
+### 
+
+
 
 
 [^1]: https://www.ncbi.nlm.nih.gov/pubmed/16791213
