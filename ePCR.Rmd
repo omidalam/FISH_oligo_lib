@@ -1,7 +1,7 @@
 ---
 title: "Preparing and labelling probe from a complex oligo library"
 author: "Omid Gholamalamdari"
-date: 'Last updated: 8/8/2018'
+date: 'Updated: 8/9/2018'
 output:
   pdf_document: default
   html_document: default
@@ -32,7 +32,7 @@ Labelling protocol is based terminal transferase protocol from Roche.
 
 
 ### Equipments
-+ BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061). pre-cleaned (See ["Cleaning stir bars"](./cleaning_stir_bars.html)).
++ BRAND magnetic stirring bar, PTFE, cylindrical with pivot ring (Sigma Z329061). pre-cleaned (See ["Cleaning stir bars"](/cleaning_stir_bars.html)).
 + Magnetic stirrer with speed control (Burrell Scientific)
 + PCR cleanup kit
 
@@ -43,15 +43,14 @@ Labelling protocol is based terminal transferase protocol from Roche.
 ### Prepare library
 1. Prepare a stock solution of your library. 
 2. Resuspend at 1 ng/$\mu$l in 10 mM Tris-HCl pH 7.5 or nuclease-free water. 
-    + Keep the stock at -80 &deg; C.
+    + Keep the stock at -80&deg; C.
 3. Prepare working stock aliquots (0.07 ng/$\mu$l) by diluting 2 $\mu$l of immortal library in 28 $\mu$l nuclease-free water.
 
 ### Prepare primers
-+ Prepare forward and reverse primers working stocks(10$\mu$M) by diluting the 100$\mu$M stock in nuclease-free water.
+Prepare forward and reverse primers working stocks(10$\mu$M) by diluting the 100$\mu$M stock in nuclease-free water.
 
 ### Prepare water saturated diethyl ether.
-+ Mix 100 ml of diethyl ether with 100 ml of nuclease-free water in a glass bottle by shaking for 30s. Allow the phases to settle before use (the top phase is diethyl ether).
-+ The water saturated solvent can be stored at RT for 3 months.
+Mix 100 ml of diethyl ether with 100 ml of nuclease-free water in a glass bottle by shaking for 30s. Allow the phases to settle before use (the top phase is diethyl ether). The water saturated solvent can be stored at RT for 3 months.
 
 ## Procedure
 ### Prepare ePCR mix.
@@ -84,6 +83,8 @@ oil_phase %>%
 5. Add 200$\mu$l of the aqueous phase to the oil-surfactant mixure in dropwise manner over a period of 1.5 min.
     + After the addition is complete, continue stirring for another 5 minutes.
     + Keep the aqueous phase leftovers as the without emulsion contol.
+    
+    $\blacktriangle$ __CRITICAL STEP__
 6. Pipet the emulsion into the wells of a PCR plate as 10 aliquots of 50 $\mu$l.
     + Pipet 50 $\mu$l of the aqueos phase left over to a well as nonemulsified control.
     + Overlay the emulsified and nonemulsified reactions with mineral oil.
@@ -95,15 +96,27 @@ oil_phase %>%
 |--------------|--------------|-----------|----------------|
 | 1            | 2 min at 95&deg;C |           |                |
 | 2-26        | 30 sec at 95&deg;C | 30 sec at A^1^| B^1^ min at 72&deg;C|
-| 27          |               |           |  10 min at 72 &deg;C|
-
-^1^ _A_ = _C_- 5&deg;C where _C_ is the Tm of the primer with lowest Tm. _B_ is equal to length of amplification in kbp.
+| 27          |               |           |  10 min at 72&deg;C|
+_^1^A = C-5&deg;C where C is the Tm of the primer with lowest Tm. B is equal to length of amplification in kbp._
 
 8. Place the nonemulsified reaction aside.
 
-$\to$ __Pause Point:__ You can keep both the w and w/o emulsion reaction at 4&deg;C overnight!
+    $\blacksquare$ __PAUSE POINT__ You can keep both the w and w/o emulsion reaction at 4&deg;C overnight!
 
-9.Pool the ePCR reactions in a 1.7 $\milli l
+9. Pool the ePCR reactions in a 1.7 $ml$ eppendorf tube.
+    + Centrifuge at 13,000$g$ for 5 minutes.
+    + Discard the upper (oil) phase.
+
+10. To remove the remaining oil from the emulsion, perform the folowing extraction twice:
+    + Add 1 $ml$ of water-saturated diethyl ether, vortex the tube and let it settle.
+    + Discard the upper (solvent) phase. 
+
+    $\blacktriangle$ __CRITICAL STEP__
+
+11. Remove the residual solvent from the broken emulsion by centrifuging under vaccum for 5 min at 25&deg;C. 
+12. Clean the emulsified and nonemulsified PCR products using a PCR clean-up kit.
+13. Analyze Aliquotes of the emulsified and nonemulsified PCR products by electrophoresis.
+    + 2% agarose gel in 1X TBE.
 
 
 
