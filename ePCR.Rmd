@@ -3,8 +3,8 @@ title: "Preparing and labelling probe from a complex oligo library"
 author: "Omid Gholamalamdari"
 date: 'Updated 8/9/2018'
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, echo =F}
