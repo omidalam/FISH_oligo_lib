@@ -74,7 +74,7 @@ oil_phase %>%
 | Component | Amount |
 | ------| ---- |
 |10X Cloned _Pfu_ buffer | 26$\mu l$ |
-| BSA (100 mg/ml stock) | 26$\mu l$ |
+| BSA (50 mg/ml stock) | 52$\mu l$ |
 | Forward primer (10µM stock) | 7.8$\mu l$ |
 | Reverse primer (10µM stock) | 7.8$\mu l$ |
 | dNTPs (10mM stock) | 5.2$\mu l$ |
