@@ -4,14 +4,58 @@ organization: "Andrew Belmont Laboratory"
 author: "Omid Gholamalamdari"
 date: "August 24, 2018"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 bibliography: bib.bib
 csl: nature.csl
 ---
 
-## Introduction
+# Introduction
 
-DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin in fixed cells the technique has been originally developed in the early 80s [@Langer-Safer] and extensively optimized by Cremer lab.[@Solovei2002; @Solovei2010 ;@Markaki] This protocol describes the combination of EdU labeling (as a marker for cell cycle) and 3D DNA-FISH in HCT116 cells, but with optimization can be used for all adherent cells.
+DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin in fixed cells the
+technique has been originally developed in the early 80s [@Langer-Safer] and extensively optimized by Cremer lab.[@Solovei2002; @Solovei2010 ;@Markaki] 
+This protocol describes the combination of EdU labeling (as a marker for cell cycle stage) and 3D DNA-FISH in HCT116 cells, but with optimization can be used for all adherent cells.
 
-## Materials and equipments
+# Materials and equipments
+All buffers should be filtered before use to reduce the noise from floating particles.
+This is specially important for the buffers containing 
+
++ DIG and/or biotin labelled probes
++ 
++ 
++ 
++ 
++
+
+# Procedure
+##
+### Cell Seeding
+Cells seeded at 0.6e6/ml, 0.5 ml culture media well.
+
+### EdU Pulse
+EdU pusled (A:C)*(1:4) by replacing with the media containing EdU( 5mM).
+6.5µl 10mM EdU in 13 ml media.
+Pulsed for 10 minutes.
+
+### Cell Fixation
+
+(@) Rinse cells 3 times, with warm(37&deg;C).
+(@) Transfer coverslips to a new 24 well plate containing warm PBS. 
+    + This is to leave behind all the debris from the cells attached to plate.
+(@) Fix with 3% PFA in 1X PBS for 10 min at RT.
+    + After this step you either need to gradually exchange PFA with PBS, or quench it with PBS-Glycine really quick.
+(@) Quench with 0.5M Glycine-PBS for 5 min at RT.
+(@) Permeabilize with 0.5% Tx-10 in PBS. 10 min at RT.
+(@) Rinse the cells with PBS, 3 times.
+(@) 
+Fixed with 3% PFA in 1X PBS, for 10 min at RT.
+Quenched with 0.5M Glycine-PBS for 5 min at RT.
+Cells permeabilized with 0.5% Tx-10 in PBS. 10 min at RT.
+Rinsed with PBS 3X.
+Cells incubated in 20% Gylcerol in PBS for 2 hr, RT.
+Dipped in LN2, thawed, repeated 4 times.
+Washed with PBST 3x10 min.
+Rinsed with fresh 0.1 N HCl in DW and incubated with fresh portion for 10 min at RT.
+Rinsed 3X with 2X SSC.
+Incubated in 2XSSC/50% Formamide at 4˚C.
+SSC part filtered.
