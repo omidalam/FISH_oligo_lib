@@ -1,0 +1,17 @@
+---
+title: "FISH with EdU labelling"
+organization: "Andrew Belmont Laboratory"
+author: "Omid Gholamalamdari"
+date: "August 24, 2018"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: bib.bib
+csl: nature.csl
+---
+
+## Introduction
+
+DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin in fixed cells the technique has been originally developed in the early 80s [@Langer-Safer] and extensively optimized by Cremer lab.[@Solovei2002; @Solovei2010 ;@Markaki] This protocol describes the combination of EdU labeling (as a marker for cell cycle) and 3D DNA-FISH in HCT116 cells, but with optimization can be used for all adherent cells.
+
+## Materials and equipments
