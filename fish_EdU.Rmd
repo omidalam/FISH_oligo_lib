@@ -60,7 +60,20 @@ Pulsed for 10 minutes.
     + The more cells stay in formamide, the more chromatin decondenses.
 
 ## Hybridization
-
+This protocol denatures the chromatin and the probe at the same time on a heat block.
+1. Make the hybridization mixture as below
+  |----------------------------------------------------------|-----------------|
+  |1. DIG and/or biotin labelled probes dissolved in HYB buffer  | 80-100 ng (each)|
+  |2. Human COT1 DNA | 1000 ng |
+  |----------------------------------------------------------|----------------|
+  |Make to 4 $\mu l$ with HYB buffer| Total 4 $\mu l$|
+2. Drop 4 $\mu l$ of the mixture on a microscopic slide.
+3. Take 1 coverslip out of 2XSSC/Formamide.
+    + Remove the excess solution by tapping the edge of the coverslip on kimwipe.
+    + Place the coverslip on the HYB mixture.
+    + Seal with rubber cement and wait for it to dry.
+    + Rubber cement will turn clear when it's dry. 
+4. Denature on a 77 &deg;C on a heatblock or 
 ## Probe washes
 
 ## Probe staining
