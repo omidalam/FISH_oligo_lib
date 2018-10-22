@@ -1,0 +1,76 @@
+---
+title: "3D-FISH in HCT116"
+author: "Omid Gholamalamdari"
+date: "Updated on 10/22/2018"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+
+## Cell Preparation
+
+1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.Gorde88
+
+1. Rinse the cells briefly in two to three changes of warm PBS.
+1. Fix the cells in 3% paraformaldehyde (freshly made) for 10 minutes at room temperature (RT).
+1. Rinse the cells three times with PBS.
+1. Permeabilize the cells in PBS-0.5% Triton X-100 for 10 minutes at RT.
+1. Rinse the cells three times with PBS.
+1. Incubate the cells in 20% glycerol for a minimum of 60 minutes (preferably overnight) at RT.
+1. Freeze the cells by dipping the coverslips into liquid nitrogen (for ~30 sec) and thaw on a paper towel. As soon as the frozen layer disappears, put the coverslips back into 20% glycerol. Repeat four times.
+1. Wash the cells three times for 10 minutes each in PBS. 
+1. Rinse the cells briefly with 0.1 N HCl and incubate with a fresh portion of 0.1 N HCl for 10 minutes at RT.
+    - The time may be in the range of 5-15 minutes for slides/coverslips with densely grown cells and/or with nuclei embedded in a voluminous cytoplasm. The concentration of HCl should not be varied.
+1. Rinse the cells three times with 2X SSC.
+1. Incubate the cells in the 50% formamide/2X SSC solution for at least 1 hour at RT (preferably overnight at 4&deg;C) before proceeding with probe hybridization.
+    - At this stage, cell can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
+
+## Hybridization
+
+1. Prepare the hybridization mixture as following to the total volume of 4$\mu$L.
+
+|Component                    | Amount          |
+|-----------------------------|-----------------|
+|Probe(s)                     | 80ng each       |
+|human COT1 DNA 1mg/ml        | 1$\mu$l         |
+|Hybridization buffer         |to 4$\mu$l       |
+
+2. Take a coverslip with cells out of the formamide-SSC and quickly drain off the excess fluid. Do not let cells dry out!
+2. Place the coverslip onto the drop of hybridization mix (with cells facing the drop).
+2. Seal the coverslip with rubber cement. Let the rubber cement dry completely.
+2. Place slides on a heating block at 77°C for 3 minutes to denature cellular and probe DNA.
+2. Perform hybridization at 37°C for 2-3 days in a humidified chamber.
+
+## Washing and Detection
+1. Before you begin warm-up a suitable volume of 2X SSC to 37&deg;C and 0.1X SSC to 60&deg;C.
+1. After hybridization, peel off the rubber cement, gently remove the coverslip, and transfer the cells to 2X SSC in a 24 well plate.
+    - You can add a small volume 2X SSC on top of the coverslips. This will both soften the rubber cement and coverslips will float easily.
+    - Make sure not to move the coverslips with force as this will damage cellular and nuclear structures.
+1. Wash in 2X SSC at 37&deg;C, shaking 3x 5min.
+    - This is for removing excess probe.
+1. Wash in 0.1X SSC at 60&deg;C (stringent washes), shaking 3x 5min.
+1. If only fluorochrome-labeled probes are used directly, immediately proceed to DNA counterstaining.
+1. Rinse the cells briefly in SSC/Tween (0.2% [v/v] Tween 20 in 4X SSC). Transfer coverslips to a humid chamber. 
+1. Wash once in 4X SSC at RT, 5 min.
+1. Block with 4X SSC/0.1% Triton X-100/4% BSA (Blocking buffer) at RT, for 30 min in a humid chamber.
+    - Make sure that you filter the blocking buffer with .2$\mu$m syringe filters.
+1. Dilute the required antibody or avidin-conjugates to appropriate working concentration in blocking buffer.
+    - 50-100$\mu$L per coverslip is enough.
+1. Incubate cells with antibody for 2 hours in a dark humid chamber at RT.
+1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min.
+1. Mount in DAPI containing mounting media.
+    - Alternatively, you can counterstain with DAPI (0.05$\mu$g/ml in 4X SSC) at RT for 5 min. Wash briefly in 4X SSC/0.1% Triton X-100.
+1. If using hardening mounting media, wait overnight for curing.
+1. Seal coverslips with colorless nail polish and store at 4&deg;C.
+    - FISH signals should be stable for at least 1 year.
+
+\begin{center}
+
+HAPPY FISHing!!
+
+\end{center}
+
+
+
