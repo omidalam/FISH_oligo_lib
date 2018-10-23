@@ -6,13 +6,38 @@ output:
   html_document:
     df_print: paged
   pdf_document: default
+bibliography: bib.bib
+csl: nature.csl
 ---
 
+#Introduction
 
-## Cell Preparation
+DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin
+in fixed cells the technique has been originally developed in the early 80s [@Langer-Safer] and
+extensively optimized by Cremer lab[@Solovei2002; @Solovei2010 ;@Markaki].
+This protocol describes the combination of EdU labeling (as a marker for cell cycle stage) and
+3D DNA-FISH in HCT116 cells, which with minor optimization can be used for all adherent cells.
 
-1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.Gorde88
+#Materials
+All buffers should be filtered before use to reduce the noise from floating particles.
+This is specially important for the buffers containing 
 
++ DIG and/or biotin labelled probes
++ 
++ 
++ 
++ 
++
+
+#Procedure
+## Day 1: Cell Seeding
+1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.
+## Day 3: Cell Preparation
+###EdU labelling
+1. _Optional_: Pulse cell with EdU by changing the media with media containing 5$\mu$M EdU. Incubate for 10 minutes.
+    - Proceed to CLICK RX! a
+
+###Cell preparation
 1. Rinse the cells briefly in two to three changes of warm PBS.
 1. Fix the cells in 3% paraformaldehyde (freshly made) for 10 minutes at room temperature (RT).
 1. Rinse the cells three times with PBS.
@@ -27,8 +52,7 @@ output:
 1. Incubate the cells in the 50% formamide/2X SSC solution for at least 1 hour at RT (preferably overnight at 4&deg;C) before proceeding with probe hybridization.
     - At this stage, cell can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
 
-## Hybridization
-
+## Day 4: Hybridization
 1. Prepare the hybridization mixture as following to the total volume of 4$\mu$L.
 
 |Component                    | Amount          |
@@ -43,7 +67,8 @@ output:
 2. Place slides on a heating block at 77°C for 3 minutes to denature cellular and probe DNA.
 2. Perform hybridization at 37°C for 2-3 days in a humidified chamber.
 
-## Washing and Detection
+## Day7: Washing and Detection
+### Probe washing
 1. Before you begin warm-up a suitable volume of 2X SSC to 37&deg;C and 0.1X SSC to 60&deg;C.
 1. After hybridization, peel off the rubber cement, gently remove the coverslip, and transfer the cells to 2X SSC in a 24 well plate.
     - You can add a small volume 2X SSC on top of the coverslips. This will both soften the rubber cement and coverslips will float easily.
@@ -54,12 +79,18 @@ output:
 1. If only fluorochrome-labeled probes are used directly, immediately proceed to DNA counterstaining.
 1. Rinse the cells briefly in SSC/Tween (0.2% [v/v] Tween 20 in 4X SSC). Transfer coverslips to a humid chamber. 
 1. Wash once in 4X SSC at RT, 5 min.
+
+### Probe Detection
 1. Block with 4X SSC/0.1% Triton X-100/4% BSA (Blocking buffer) at RT, for 30 min in a humid chamber.
     - Make sure that you filter the blocking buffer with .2$\mu$m syringe filters.
 1. Dilute the required antibody or avidin-conjugates to appropriate working concentration in blocking buffer.
     - 50-100$\mu$L per coverslip is enough.
 1. Incubate cells with antibody for 2 hours in a dark humid chamber at RT.
 1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min.
+
+### EdU click reaction
+
+### DNA counterstaining and mounting
 1. Mount in DAPI containing mounting media.
     - Alternatively, you can counterstain with DAPI (0.05$\mu$g/ml in 4X SSC) at RT for 5 min. Wash briefly in 4X SSC/0.1% Triton X-100.
 1. If using hardening mounting media, wait overnight for curing.
