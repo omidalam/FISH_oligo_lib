@@ -1,0 +1,12 @@
+---
+title: "README"
+author: "omidalam"
+output: html_document
+---
+
+In this rep, I'm storing my protocols and code for 3D-DNA FISH and oligo-library FISH.
+
+You can find protocols for FISH with immuostaining and/or EdU labelling.
+I'll also include code for designing complex oligo libraries for 3D-FISH.
+
+HAPPY FISHing!
