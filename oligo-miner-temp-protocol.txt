@@ -1,0 +1,32 @@
+WI-38, IMR-90, or PGP-1 fibroblasts were seeded at ∼20% confluence into the wells of LabtekII Coverglass Chambers or ididi coverglass chambers or onto no.-1.5 coverglass and allowed to grow to ∼70–90% confluence in a mammalian tissue culture incubator. 
+
+Samples were then rinsed with 1× PBS solution and 
+
+fixed for 10 min in 1× PBS solution + 4% (wt/vol) paraformaldehyde.
+
+rinsed again with 1× PBS solution
+
+permeabilized by a rinse in 1× PBS solution + 0.1% (vol/vol) Tween-20 followed by 
+
+a 10-min incubation in 1× PBS solution + 0.5% (vol/vol) Triton X-100
+
+5-min incubation in 0.1 N HCl
+
+transferred to 2× SSC + 0.1% (vol/vol) Tween-20 (SSCT) and 
+
+then to 2× SSCT + 50% (vol/vol) formamide. 
+
+Samples were then incubated in 2× SSCT + 50% formamide at 60 °C for 20–60 min
+
+hybridization solution consisting of 2× SSCT, 50% formamide, 10% (wt/vol) dextran sulfate, 40 ng/μL RNase A (EN0531; Thermo Fisher), and Oligopaint FISH probe sets at 1.6 or 2.5 μM was added. 
+Samples were denatured at 78 °C for 3 min on a water-immersed heat block or flat-block thermocycler (Mastercycler Nexus; Eppendorf) and then allowed to hybridize for more than 24 h at 47–52 °C in a humidified chamber placed in an air incubator or on a flat-block thermocycler. 
+
+After hybridization, samples were washed in 2× SSCT at 60 °C for 5 min four times and in 2× SSCT at room temperature two times, and then transferred to 1× PBS solution. 
+Unlabeled secondary oligos (25) and tertiary oligos bearing Alexa Fluor 405 and
+647 dyes (26) (Table S2) at 0.5–1 μM were subsequently hybridized to the
+19p13.2 samples for 1 h in 2× SSC + 30% formamide + 10% dextran sulfateat room temperature and washed three times for 5 min each in 2× SSC +
+30% formamide. SlowFade Gold + DAPI (S36938; Thermo Fisher) was added
+to samples prepared for diffraction-limited imaging. Samples for superresolution
+imaging were stained in a 1-μg/mL DAPI solution in 1× PBS solution
+or 2× SSCT for 5 min at 37 °C, followed by a brief rinse in 1× PBS
+solution or 2× SSCT at room temperature.
