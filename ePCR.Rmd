@@ -1,7 +1,7 @@
 ---
 title: "Preparing and labelling probe from a complex oligo library"
 author: "Omid Gholamalamdari"
-date: 'Updated 8/9/2018'
+date: 'Updated 10/30/2018'
 output:
   html_document: default
   pdf_document: default
@@ -59,8 +59,8 @@ Mix 100 ml of diethyl ether with 100 ml of nuclease-free water in a glass bottle
 1. Prepare the oil-surfactant mixture by througly mixing the following components in a 50ml conical tube.
 
 ```{r, eval=T,echo=FALSE}
-oil_phase<-data.frame(Component= c("Span 80","Tween 80", "Triton X-100", "Mineral oil"), Amount=c("2.25ml", "200µl", "25µl", "to 50ml"),Final_conc=c("4.5% (vol/vol)","0.4% (vol/vol)","0.05% (vol/vol)",""))
-colnames(oil_phase)<- c("Component","Amount", "Final concentration")
+oil_phase<-data.frame(Component= c("Span 80","Tween 80", "Triton X-100", "Mineral oil"),Final_conc=c("4.5% (vol/vol)","0.4% (vol/vol)","0.05% (vol/vol)",""),vol_5ml=c("225µl","20µl","2.5µl","to 5ml"),vol_25ml=c("1.125ml","100µl","12.5µl","to 25ml"), vol_50ml=c("2.25ml", "200µl", "25µl", "to 50ml"))
+colnames(oil_phase)<- c("Component", "Final concentration", "For 5ml","For 25ml","For 50ml")
 oil_phase %>%
   kable(booktab=T) %>%
   kable_styling(bootstrap_options = c("bordered","hover","striped", full_width = F, position="float-right"))
@@ -74,7 +74,7 @@ oil_phase %>%
 | Component | Amount |
 | ------| ---- |
 |10X Cloned _Pfu_ buffer | 26$\mu l$ |
-| BSA (50 mg/ml stock) | 52$\mu l$ |
+| BSA (20 mg/ml stock) | 16.5$\mu l$ |
 | Forward primer (10µM stock) | 7.8$\mu l$ |
 | Reverse primer (10µM stock) | 7.8$\mu l$ |
 | dNTPs (10mM stock) | 5.2$\mu l$ |
@@ -99,8 +99,8 @@ oil_phase %>%
 | 1            | 2 min at 95&deg;C |           |                |
 | 2-26        | 30 sec at 95&deg;C | 30 sec at A^1^| B^1^ min at 72&deg;C|
 | 27          |               |           |  10 min at 72&deg;C|
-_^1^A = C-5&deg;C where C is the Tm of the primer with lowest Tm. B is equal to length of amplification in kbp._
-$\newline$
+_^1^A = C-5&deg;C where C is the Tm of the primer with lowest Tm. B is equal to length of amplification in kbp._  
+&nbsp;
 
 8. Place the nonemulsified reaction aside.
 
