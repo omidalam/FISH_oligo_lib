@@ -3,15 +3,15 @@ title: "3D-FISH in HCT116"
 author: "Omid Gholamalamdari"
 date: "Updated on 10/22/2018"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 
 ## Cell Preparation
 
-1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.Gorde88
+1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.
 
 1. Rinse the cells briefly in two to three changes of warm PBS.
 1. Fix the cells in 3% paraformaldehyde (freshly made) for 10 minutes at room temperature (RT).
@@ -38,13 +38,16 @@ output:
 |Hybridization buffer         |to 4$\mu$l       |
 
 2. Take a coverslip with cells out of the formamide-SSC and quickly drain off the excess fluid. Do not let cells dry out!
+
 2. Place the coverslip onto the drop of hybridization mix (with cells facing the drop).
 2. Seal the coverslip with rubber cement. Let the rubber cement dry completely.
 2. Place slides on a heating block at 77°C for 3 minutes to denature cellular and probe DNA.
 2. Perform hybridization at 37°C for 2-3 days in a humidified chamber.
 
 ## Washing and Detection
+
 1. Before you begin warm-up a suitable volume of 2X SSC to 37&deg;C and 0.1X SSC to 60&deg;C.
+
 1. After hybridization, peel off the rubber cement, gently remove the coverslip, and transfer the cells to 2X SSC in a 24 well plate.
     - You can add a small volume 2X SSC on top of the coverslips. This will both soften the rubber cement and coverslips will float easily.
     - Make sure not to move the coverslips with force as this will damage cellular and nuclear structures.
