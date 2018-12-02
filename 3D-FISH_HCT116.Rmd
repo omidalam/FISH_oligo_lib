@@ -1,7 +1,7 @@
 ---
 title: "3D-FISH in HCT116"
 author: "Omid Gholamalamdari"
-date: "Updated on 10/22/2018"
+date: "`r format(Sys.time(), 'Updated on %d/%m/%Y')`"
 output:
   pdf_document: default
   html_document:
@@ -55,25 +55,33 @@ output:
     - This is for removing excess probe.
 1. Wash in 0.1X SSC at 60&deg;C (stringent washes), shaking 3x 5min.
 1. If only fluorochrome-labeled probes are used directly, immediately proceed to DNA counterstaining.
-1. Rinse the cells briefly in SSC/Tween (0.2% [v/v] Tween 20 in 4X SSC). Transfer coverslips to a humid chamber. 
+1. Rinse the cells briefly in 4XSSCT (0.1% [v/v] Triton X-100 20 in 4X SSC). Transfer coverslips to a humid chamber. 
 1. Wash once in 4X SSC at RT, 5 min.
-1. Block with 4X SSC/0.1% Triton X-100/4% BSA (Blocking buffer) at RT, for 30 min in a humid chamber.
+1. Block with 4X SSCT (0.1% Triton X-100/4% BSA: Blocking buffer) at RT, for 30 min in a humid chamber.
     - Make sure that you filter the blocking buffer with .2$\mu$m syringe filters.
 1. Dilute the required antibody or avidin-conjugates to appropriate working concentration in blocking buffer.
     - 50-100$\mu$L per coverslip is enough.
 1. Incubate cells with antibody for 2 hours in a dark humid chamber at RT.
-1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min.
+1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min (Use 10 minutes each if having antibody background).
+1. Dip briefly i n Distilled water to remove excess salt.
 1. Mount in DAPI containing mounting media.
-    - Alternatively, you can counterstain with DAPI (0.05$\mu$g/ml in 4X SSC) at RT for 5 min. Wash briefly in 4X SSC/0.1% Triton X-100.
-1. If using hardening mounting media, wait overnight for curing.
+    - Alternatively, you can counterstain with DAPI (2$\mu$g/ml in 1X PBS).
+        - Dilute 10mg/ml DAPI stock solution 1:5000 in 1x PBS.
+        - Rinse with PBS.
+        - Incubate with DAPI/PBS at RT for 5 min. 
+        - Rinse three times with 1x PBS.
+        - Dip briefly i n Distilled water to remove salt.
+        - Mount with mounting media.
+1. If using hardening mounting media (MM), wait overnight for curing.
+    - If using non-hardening MM remove excess MM by pressing a whatman paper gently on the back of the coverslips several time, until the paper does not get wet
 1. Seal coverslips with colorless nail polish and store at 4&deg;C.
-    - FISH signals should be stable for at least 1 year.
+    - FISH signals should be stable for at least one year.
 
-\begin{center}
+&nbsp;
 
-HAPPY FISHing!!
+\center __Happy FISHing!!__ \center
 
-\end{center}
+
 
 
 
