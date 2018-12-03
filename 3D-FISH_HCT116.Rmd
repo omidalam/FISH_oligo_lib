@@ -79,7 +79,7 @@ output:
 
 &nbsp;
 
-\center __Happy FISHing!!__ \center
+\center __Happy FISHing!__ \center
 
 
 
