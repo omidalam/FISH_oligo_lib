@@ -1,20 +1,56 @@
 ---
 title: "3D-FISH in HCT116"
-author: "Omid Gholamalamdari"
+author: "Omid Gholamalamdari, Belmont lab, UIUC"
 date: "`r format(Sys.time(), 'Updated on %d/%m/%Y')`"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
+bibliography: bib.bib
+csl: nature.csl
 ---
+## Introduction
+DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin
+in fixed cells the technique has been originally developed in the early 80s [@Langer-Safer] and
+extensively optimized by Cremer lab[@Solovei2002; @Solovei2010 ;@Markaki].
+This protocol describes 3D DNA-FISH in HCT116 cells, but with optimization can be used for all adherent cells. In order to prepare this protocol, I've used notes from Yu Chen, Liguo Zhang and Binhui Zhao during their tenures at Belmont lab, UIUC.
 
+## Buffer Preparation
+
++ Prepare all buffers at most one day ahead of experiment, unless noted.
++ For cell preparation:
+    - Filter following buffers using syringe filter 0.22µm:
+        - 3% PFA 20 mL, PBS TX-100 0.5% and 0.1N HCl. __Make fresh__ on the day.
+        - 1X PBS-Glycerol, 20 mL;
+    - Filter following buffers using Whatman filter paper grade 42 (It is cheaper than 0.22 µM):
+        - PBS-Glycine, 20 mL;
+        - PBST (0.1% TX-100), 300 mL; _Note: This buffer is called PBST throughout the protocol._
+        - 2X SSC, 50 mL;
+    - 50% Formamide/2XSSC, 13mL;
+        - __DO NOT FILTER__ the mixture
+        - Add 1.3mL filtered 20X SSC
+        - Add 6.5 mL Formamide
+        - Bring the volume to 10 ml with DW
+        - Adjust the pH with 1M HCl to 7.0 
+        - Bring the final volume to 13mL
++ For washing and detection:
+    - Filter following buffers using Whatman filter paper grade 42. Unless noted otherwise.
+        - 4X SSC, 20 mL;
+        - 4XSSCT (0.1% [v/v] Triton X-100 in 4X SSC), 100 mL;
+        - 4X SSCT-4% BSA, 5mL; _Note: This buffer is called Blocking Buffer throughout the protocol._
+            - __Make fresh__ on the day, Syringe filter.
+        - 2X SSC, 50 mL;
+        - 0.1X SSC, 50mL;
+        - PBS, 100 mL;
+        - DAPI 2$\mu$g/ml in 1X PBS, 15 mL;
+            - __Make fresh__ on the day, Syringe filter.
 
 ## Cell Preparation
 
 1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.
-
 1. Rinse the cells briefly in two to three changes of warm PBS.
 1. Fix the cells in 3% paraformaldehyde (freshly made) for 10 minutes at room temperature (RT).
+1. Gradually exchange PFA with PBST.
 1. Rinse the cells three times with PBS.
 1. Permeabilize the cells in PBS-0.5% Triton X-100 for 10 minutes at RT.
 1. Rinse the cells three times with PBS.
@@ -25,7 +61,7 @@ output:
     - The time may be in the range of 5-15 minutes for slides/coverslips with densely grown cells and/or with nuclei embedded in a voluminous cytoplasm. The concentration of HCl should not be varied.
 1. Rinse the cells three times with 2X SSC.
 1. Incubate the cells in the 50% formamide/2X SSC solution for at least 1 hour at RT (preferably overnight at 4&deg;C) before proceeding with probe hybridization.
-    - At this stage, cell can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
+    - At this stage, cells can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
 
 ## Hybridization
 
@@ -34,8 +70,8 @@ output:
 |Component                    | Amount          |
 |-----------------------------|-----------------|
 |Probe(s)                     | 80ng each       |
-|human COT1 DNA 1mg/ml        | 1$\mu$l         |
-|Hybridization buffer         |to 4$\mu$l       |
+|human COT1 DNA 1mg/mL        | 1$\mu$L         |
+|Hybridization buffer         |to 4$\mu$L       |
 
 2. Take a coverslip with cells out of the formamide-SSC and quickly drain off the excess fluid. Do not let cells dry out!
 
@@ -47,7 +83,6 @@ output:
 ## Washing and Detection
 
 1. Before you begin warm-up a suitable volume of 2X SSC to 37&deg;C and 0.1X SSC to 60&deg;C.
-
 1. After hybridization, peel off the rubber cement, gently remove the coverslip, and transfer the cells to 2X SSC in a 24 well plate.
     - You can add a small volume 2X SSC on top of the coverslips. This will both soften the rubber cement and coverslips will float easily.
     - Make sure not to move the coverslips with force as this will damage cellular and nuclear structures.
@@ -55,7 +90,7 @@ output:
     - This is for removing excess probe.
 1. Wash in 0.1X SSC at 60&deg;C (stringent washes), shaking 3x 5min.
 1. If only fluorochrome-labeled probes are used directly, immediately proceed to DNA counterstaining.
-1. Rinse the cells briefly in 4XSSCT (0.1% [v/v] Triton X-100 20 in 4X SSC). Transfer coverslips to a humid chamber. 
+1. Rinse the cells briefly in 4XSSCT (0.1% [v/v] Triton X-100 in 4X SSC). Transfer coverslips to a humid chamber. 
 1. Wash once in 4X SSC at RT, 5 min.
 1. Block with 4X SSCT (0.1% Triton X-100/4% BSA: Blocking buffer) at RT, for 30 min in a humid chamber.
     - Make sure that you filter the blocking buffer with .2$\mu$m syringe filters.
@@ -65,21 +100,25 @@ output:
 1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min (Use 10 minutes each if having antibody background).
 1. Dip briefly i n Distilled water to remove excess salt.
 1. Mount in DAPI containing mounting media.
-    - Alternatively, you can counterstain with DAPI (2$\mu$g/ml in 1X PBS).
-        - Dilute 10mg/ml DAPI stock solution 1:5000 in 1x PBS.
+    - Alternatively, you can counterstain with DAPI (2$\mu$g/mL in 1X PBS).
+        - Dilute 10mg/mL DAPI stock solution 1:5000 in 1x PBS.
         - Rinse with PBS.
         - Incubate with DAPI/PBS at RT for 5 min. 
         - Rinse three times with 1x PBS.
-        - Dip briefly i n Distilled water to remove salt.
+        - Briefly dip in distilled water to remove salt.
         - Mount with mounting media.
 1. If using hardening mounting media (MM), wait overnight for curing.
-    - If using non-hardening MM remove excess MM by pressing a whatman paper gently on the back of the coverslips several time, until the paper does not get wet
+    - If using non-hardening MM remove excess MM by pressing a Whatman paper gently on the back of the coverslips several times, until the paper does not get wet
 1. Seal coverslips with colorless nail polish and store at 4&deg;C.
     - FISH signals should be stable for at least one year.
 
 &nbsp;
 
-\center __Happy FISHing!__ \center
+__Happy FISHing!!__
+
+
+## References
+
 
 
 
