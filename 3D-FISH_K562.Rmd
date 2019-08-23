@@ -1,0 +1,106 @@
+---
+title: "3D-FISH in K562"
+author: "Omid Gholamalamdari, Belmont lab, UIUC"
+date: "`r format(Sys.time(), 'Updated on %d/%m/%Y')`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+bibliography: bib.bib
+csl: nature.csl
+---
+## Introduction
+DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin
+in fixed cells the technique has been originally developed in the early 80s [@Langer-Safer] and
+extensively optimized by Cremer lab[@Solovei2002; @Solovei2010 ;@Markaki].
+This protocol describes 3D DNA-FISH in HCT116 cells, but with optimization can be used for all adherent cells. In order to prepare this protocol, I've used notes from Yu Chen, Liguo Zhang and Binhui Zhao during their tenures at Belmont lab, UIUC.
+
+## Cell Preparation
+1. Make cell prep buffers.
+1. Count the cells, pellete down and resuspend in fresh media to the 1.5e6 cells/ml concentration.
+    - Need 150$\mu$l per 12mm coverslip.
+1. Put the cells on the pedestal device and add the cells and incubate in the cell culture hood for 30-60 minutes.
+1. Transfer the coverslips to 12 well plate containg 1X warm PBS.
+    - Bigger wells helps not to wash cells off the coverslips.
+    - Use 1ml for washes.
+1. Permeabilize the cells in PBS-0.1% Triton X-100 for 45-60 seconds at RT.
+1. Fix the cells with 3.6% PFA for 10 minutes at RT.
+    - To avoid cell drying, add 0.5ml of PBST after 10 minutes and before removing PFA.
+1. Quench with 0.5M glycine in PBS for 5 min at RT.
+1. If you want to do immunostaining and FISH together
+    - Block with 5% NGS in PBST (0.1%) for 1 hour at RT.
+    - Incubate with diluted primary antibody in blocking buffer and incubate in humid chamber overnight.
+        - For anti-SON: use 1:2000.
+    - Wash coverslips with PBST 3 $\times$ 5 min at RT. Prepare secondary antibody in Blocking Buffer.
+    - Add secondary antibody solution and incubate for 1-2 hours at RT in adark humid chamber.
+    - Prepare 3% PFA in PBS.
+    - Wash 3 $\times$ 5 min with PBST at RT.
+    - Fix the cells with 3% PFA for 10 minutes at RT.
+    - Quench with 0.5M glycine in PBS for 5 min at RT.
+1. Wash with PBST 5 min.
+1. Incubate the cells in 20% glycerol for a minimum of 60 minutes (preferably overnight at 4&deg;C) at RT.
+1. Freeze the cells by dipping the coverslips into liquid nitrogen (for ~30 sec) and thaw on a paper towel. As soon as the frozen layer disappears, put the coverslips back into 20% glycerol. Repeat six times.
+1. Wash 3 $\times$ 5 min with PBST at RT.
+1. Briefly rinse coverslips in 0.1N HCl/0.7%Tx-100/2xSSC and then incubate woth a fresh portion of 0.1N HCl/0.7%Tx-100/2xSSC for 10 min on ice.
+1. Wash 3 $\times$ 5 min with 2xSSC at RT.
+1. Incubate the cells in the 50% formamide/2X SSC solution for at least 1 hour at RT (preferably overnight at 4&deg;C) before proceeding with probe hybridization.
+    - At this stage, cells can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
+
+## Hybridization
+
+1. Prepare the hybridization mixture as following to the total volume of 4$\mu$L.
+
+|Component                    | Amount          |
+|-----------------------------|-----------------|
+|Probe(s)                     | 80ng each       |
+|human COT1 DNA 1mg/mL        | 1$\mu$L         |
+|Hybridization buffer         |to 4$\mu$L       |
+
+2. Take a coverslip with cells out of the formamide-SSC and quickly drain off the excess fluid. Do not let cells dry out!
+
+2. Place the coverslip onto the drop of hybridization mix (with cells facing the drop).
+2. Seal the coverslip with rubber cement. Let the rubber cement dry completely.
+2. Place slides on a heating block at 77°C for 3 minutes to denature cellular and probe DNA.
+2. Perform hybridization at 37°C for 2-3 days in a humidified chamber.
+
+## Washing and Detection
+
+1. Before you begin warm-up a suitable volume of 2X SSC to 37&deg;C and 0.1X SSC to 60&deg;C.
+1. After hybridization, peel off the rubber cement, gently remove the coverslip, and transfer the cells to 2X SSC in a 12 well plate.
+    - You can add a small volume 2X SSC on top of the coverslips. This will both soften the rubber cement and coverslips will float easily.
+    - Make sure not to move the coverslips with force as this will damage cellular and nuclear structures.
+1. To remove excess probe. Wash in 2X SSC at 37&deg;C, shaking 3 $\times$ 5min.
+1. Wash in 0.1X SSC at 60&deg;C (stringent washes), shaking 3 $\times$ 5min.
+1. If only fluorochrome-labeled probes are used directly, immediately proceed to DNA counterstaining.
+1. Rinse the cells briefly in 4XSSCT for 5 min at RT.
+1. Block with 4X SSCT (0.1% Triton X-100/4% BSA: Blocking buffer) at RT, for 30 min in a humid chamber.
+    - Make sure that you filter the blocking buffer with 0.2$\mu$m syringe filters.
+1. Dilute the required antibody or avidin-conjugates to appropriate working concentration in blocking buffer.
+1. Incubate cells with antibody for 2 hours in a dark humid chamber at RT.
+1. Wash with 4X SSC/0.1% Triton X-100 shaking 3 $\times$ 5 min at RT.
+1. Dip briefly in distilled water to remove excess salt.
+1. Mount in DAPI containing mounting media.
+    - Alternatively, you can counterstain with DAPI (2$\mu$g/mL in 1X PBS).
+        - Dilute 10mg/mL DAPI stock solution 1:5000 in 1x PBS.
+        - Rinse with PBS.
+        - Incubate with DAPI/PBS at RT for 5 min. 
+        - Rinse three times with 1x PBS.
+        - Briefly dip in distilled water to remove salt.
+        - Mount with mounting media.
+1. If using hardening mounting media (MM), wait overnight for curing.
+    - If using non-hardening MM remove excess MM by pressing a Whatman paper gently on the back of the coverslips several times, until the paper does not get wet
+1. Seal coverslips with colorless nail polish and store at 4&deg;C.
+    - FISH signals should be stable for at least one year.
+
+&nbsp;
+
+__Happy FISHing!!__
+
+
+## References
+
+
+
+
+
+
