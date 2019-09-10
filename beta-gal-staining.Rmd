@@ -1,0 +1,44 @@
+---
+title: "ß-Galactosidase in situ assay for cellular senescence"
+author: "Omid Gholamalamdari"
+date: "8/22/2019"
+output: pdf_document
+
+bibliography: bib.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+This protocol is based on "Dimiri et al." [@Dimri1995].
+ß-Galactosidase is a hypothetical enzyme that cleaves X-gal to galactose and a blue compound (similar to ß-galactosidase reaction; hence the assay's name). It has been shown that once cells become senescent they will make this enzyme.
+
+## Protocol
+
+1. Rinse twice cells with warm 1x-PBS (Calcium-magnesium free)
+2. Fix the cells with freshly made 3%. -PFA in PBS.
+3. Incubate fixed cells @ room temperature for 3-5(what's the good time?) minutes.
+4. Rinse the fixed cells twice with 1X-PBS.
+5. Stain the cells with freshly made Staining solution in the dark at 37&deg;C __do not use a CO2 incubator).__
+    - Staining should be visible after 2-4 hours. Can extend up to 12-16 hrs.
+6. Visualize/count by light microscopy using inverted tissue culture scope.
+
+## Staining solution
+
+1. 250ul of 200mM Potassium Ferricyanide (stock= 3.3 g/50ml) (final concentration: 5mM)
+2. 250ul of 200mM Potassium Ferrocyanide (stock= 4.2 g/50ml) (final concentration: 5mM)
+3. 100ul of 200mM MgCl2 (stock= 2g/50ml) (final concentration: 2mM)
+4. 250ul of 6M NaCl (stock= 17.5 g/50ml) (final concentration: 150mM)
+4. 200ul of 50mg/ml X-gal in DMSO (final: 1mg/ml) Store the stock at -20&deg;C
+5. bring up the volume to 10ml with citric acid/sodium phosphate buffer.
+
+### Citric acid sodium phosphate buffer
+The original protocol calls for " 40mM citric acid/sodium phosphate, pH 6.0 buffer. It is not clear to me what does this molarity refer to (i.e citric acid,sodium phosphate or both). Different protocols do it differently. The general protocol for making citric acid phosphate buffer of pH 6.0 (below) has a molarity of 40mM for citric acid. So I stick to it. 
+
+- 39.4ml of 0.1M citric acid.
+- 60.6 of 0.2M sodium ohosphate dibasic.
+- Adjust the pH to 6.0.
+
+## References
