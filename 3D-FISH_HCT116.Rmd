@@ -1,31 +1,63 @@
 ---
 title: "3D-FISH in HCT116"
-author: "Omid Gholamalamdari"
-date: "Updated on 10/22/2018"
+author: "Omid Gholamalamdari, Belmont lab, UIUC"
+date: "`r format(Sys.time(), 'Updated on %d/%m/%Y')`"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
+bibliography: bib.bib
+csl: nature.csl
 ---
+## Introduction
+DNA Fluorescent In-Situ Hybridization (FISH) is a technique to visualize stretches of chromatin
+in fixed cells. FISH has been originally developed in the early 80s [@Langer-Safer] and
+extensively optimized by Cremer lab[@Solovei2002; @Solovei2010 ;@Markaki] for preserving chromatin structure.
+This protocol describes 3D DNA-FISH in HCT116 cells, and with optimization can be used for all adherent cells. In order to prepare this protocol, I've used notes from Yu Chen, Liguo Zhang and Binhui Zhao during their tenures at Belmont lab, UIUC. 
+If you're interested in performing FISH with EdU labelling, to distinguish G1/G2 and S phase cells, check the __repli-FISH__ at the end of this protocol.
 
+## Buffer Preparation
+
++ For cell preparation:
+    - 3% PFA in PBS 20 mL ; __Make fresh__
+    - PBS Triton X-100 0.5%; __Make fresh__
+    - 0.1N HCl; __Make fresh__
+    - 1X PBS-Glycerol, 20 mL;
+    - PBS-Glycine, 20 mL;
+    - PBST (0.1% Triton X-100), 300 mL; _Note: This buffer is called PBST throughout the protocol._
+    - 2X SSC, 50 mL;
+    - 50% Formamide/2XSSC, 13mL;
+      - __DO NOT FILTER__ the mixture
+      - Mix 6.5 mL formamide with 5 mL DI-water
+      - Adjust the pH with 1M HCl to 7.0
++ For washing and detection:
+    - 4X SSC, 20 mL;
+    - 4XSSCT (0.1% [v/v] Triton X-100 in 4X SSC), 100 mL;
+    - 4X SSCT-4% BSA, 5mL; _Note: This buffer is called Blocking Buffer throughout the protocol._
+        - __Make fresh__ and filter using syringe filter (0.22µm).
+    - 2X SSC, 50 mL;
+    - 0.1X SSC, 50mL;
+    - PBS, 100 mL;
+    - DAPI 2$\mu$g/ml in 1X PBS, 15 mL;
+        - __Make fresh__, filter.
 
 ## Cell Preparation
 
-1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.Gorde88
-
-1. Rinse the cells briefly in two to three changes of warm PBS.
+1. Seed the 50k cells per 12mm, #1.5 coverslips (0.5 mL of 100k/mL). Let the cells grow for 2 days.
+1. Rinse the cells briefly with two to three changes of warm PBS.
 1. Fix the cells in 3% paraformaldehyde (freshly made) for 10 minutes at room temperature (RT).
+1. Gradually exchange PFA with PBST.
 1. Rinse the cells three times with PBS.
 1. Permeabilize the cells in PBS-0.5% Triton X-100 for 10 minutes at RT.
 1. Rinse the cells three times with PBS.
-1. Incubate the cells in 20% glycerol for a minimum of 60 minutes (preferably overnight) at RT.
+1. Incubate the cells in 20% glycerol , overnight at 4°C. (Alternatively you can incubate for 1 hour at __RT__)
 1. Freeze the cells by dipping the coverslips into liquid nitrogen (for ~30 sec) and thaw on a paper towel. As soon as the frozen layer disappears, put the coverslips back into 20% glycerol. Repeat four times.
-1. Wash the cells three times for 10 minutes each in PBS. 
+1. Wash the cells three times for 10 minutes each in PBS.
 1. Rinse the cells briefly with 0.1 N HCl and incubate with a fresh portion of 0.1 N HCl for 10 minutes at RT.
     - The time may be in the range of 5-15 minutes for slides/coverslips with densely grown cells and/or with nuclei embedded in a voluminous cytoplasm. The concentration of HCl should not be varied.
 1. Rinse the cells three times with 2X SSC.
 1. Incubate the cells in the 50% formamide/2X SSC solution for at least 1 hour at RT (preferably overnight at 4&deg;C) before proceeding with probe hybridization.
-    - At this stage, cell can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
+    - At this stage, cells can be stored for at least 3-4 months in 50% formamaide/2X SSC. Longer storage may result in deterioration of the nuclear morphology after the denaturation step of 3D-FISH.
 
 ## Hybridization
 
@@ -34,16 +66,18 @@ output:
 |Component                    | Amount          |
 |-----------------------------|-----------------|
 |Probe(s)                     | 80ng each       |
-|human COT1 DNA 1mg/ml        | 1$\mu$l         |
-|Hybridization buffer         |to 4$\mu$l       |
+|human COT1 DNA 1mg/mL        | 1$\mu$L         |
+|Hybridization buffer         |to 4$\mu$L       |
 
 2. Take a coverslip with cells out of the formamide-SSC and quickly drain off the excess fluid. Do not let cells dry out!
+
 2. Place the coverslip onto the drop of hybridization mix (with cells facing the drop).
 2. Seal the coverslip with rubber cement. Let the rubber cement dry completely.
 2. Place slides on a heating block at 77°C for 3 minutes to denature cellular and probe DNA.
 2. Perform hybridization at 37°C for 2-3 days in a humidified chamber.
 
 ## Washing and Detection
+
 1. Before you begin warm-up a suitable volume of 2X SSC to 37&deg;C and 0.1X SSC to 60&deg;C.
 1. After hybridization, peel off the rubber cement, gently remove the coverslip, and transfer the cells to 2X SSC in a 24 well plate.
     - You can add a small volume 2X SSC on top of the coverslips. This will both soften the rubber cement and coverslips will float easily.
@@ -52,25 +86,57 @@ output:
     - This is for removing excess probe.
 1. Wash in 0.1X SSC at 60&deg;C (stringent washes), shaking 3x 5min.
 1. If only fluorochrome-labeled probes are used directly, immediately proceed to DNA counterstaining.
-1. Rinse the cells briefly in SSC/Tween (0.2% [v/v] Tween 20 in 4X SSC). Transfer coverslips to a humid chamber. 
+1. Rinse the cells briefly in 4XSSCT (0.1% [v/v] Triton X-100 in 4X SSC). Transfer coverslips to a humid chamber. 
 1. Wash once in 4X SSC at RT, 5 min.
-1. Block with 4X SSC/0.1% Triton X-100/4% BSA (Blocking buffer) at RT, for 30 min in a humid chamber.
+1. Block with 4X SSCT (0.1% Triton X-100/4% BSA: Blocking buffer) at RT, for 30 min in a humid chamber.
     - Make sure that you filter the blocking buffer with .2$\mu$m syringe filters.
 1. Dilute the required antibody or avidin-conjugates to appropriate working concentration in blocking buffer.
     - 50-100$\mu$L per coverslip is enough.
 1. Incubate cells with antibody for 2 hours in a dark humid chamber at RT.
-1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min.
+1. Wash with 4X SSC/0.1% Triton X-100 at RT, shaking 3x 5min (Use 10 minutes each if having antibody background).
+1. Dip briefly i n Distilled water to remove excess salt.
 1. Mount in DAPI containing mounting media.
-    - Alternatively, you can counterstain with DAPI (0.05$\mu$g/ml in 4X SSC) at RT for 5 min. Wash briefly in 4X SSC/0.1% Triton X-100.
-1. If using hardening mounting media, wait overnight for curing.
+    - Alternatively, you can counterstain with DAPI (2$\mu$g/mL in 1X PBS).
+        - Dilute 10mg/mL DAPI stock solution 1:5000 in 1x PBS.
+        - Rinse with PBS.
+        - Incubate with DAPI/PBS at RT for 5 min. 
+        - Rinse three times with 1x PBS.
+        - Briefly dip in distilled water to remove salt.
+        - Mount with mounting media.
+1. If using hardening mounting media (MM), wait overnight for curing.
+    - If using non-hardening MM remove excess MM by pressing a Whatman paper gently on the back of the coverslips several times, until the paper does not get wet
 1. Seal coverslips with colorless nail polish and store at 4&deg;C.
-    - FISH signals should be stable for at least 1 year.
+    - FISH signals should be stable for at least one year.
 
-\begin{center}
+## repli-FISH ( EdU labelling + FISH + Click chemistry)
+1. Just before fixation pulse the cells with media containing 5$\mu$M EdU for 5-10 minutes.
+2. Wash the cells with 37°C 1X PBS.
+3. Continue and complete the FISH procedure as above.
+4. Right before DNA counter staining with DAPI, perform the click chemistry to label EdU nucleotide with your desired fluorophore-azide (A488-azide).
 
-HAPPY FISHing!!
+5. Prepare click chemistry cocktail <15 minutes before use. 
+  - Mix the ingredients in the __following order__.
 
-\end{center}
+
+| Component | For 1000$\mu$L | For 500$\mu$L |
+|:----------|:-----------:|:----------:|
+|1X Click-iT reaction Buffer| 860$\mu$L | 430$\mu$L|
+|CuSO_4|40$\mu$L| 20$\mu$L|
+|Alexa-488 azide (1mM)|4$\mu$L| 2$\mu$L|
+|Reaction buffer additive (1X)| 100$\mu$L | 50$\mu$L |
+
+6. Use 50-100$\mu$L of the cocktail per 12mm coverslip and incubate for 30 minutes at RT in dark/humid chamber.
+7. Washed 3x5min with 4X-SSC at RT.
+8. Continue with DNA counter staining and mounting.
+
+&nbsp;
+
+__Happy FISHing!!__
+
+## References
+
+
+
 
 
 
