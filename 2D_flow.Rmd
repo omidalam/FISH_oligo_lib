@@ -1,0 +1,53 @@
+---
+title: "2-Dimensional flow cytometry"
+author: "Omid Gholamalamdari"
+date: "8/19/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Materials Needed
+
+- Propidium Iodide 1mg/ml
+- RNase A 1mg/ml
+- EdU and Click-iT reaction materials
+
+# Procedure
+
+## Cell harvest 
+1. Pulse the cells with media containing 10uM of EdU for 15-30 minutes in CO~2~ incubator.
+1. Harvest cells 3 x 10^6^ in media (scrape 6cm plate or cell suspension) and transfer to 1.5 ml tube.
+1. Centrifuge  cells in a 1.5 ml tube for 5 min, 1000 rpm, RT.
+2. Aspirate supernatant completely with P200 
+(will be effective if spun down ~3 sec once again to discard residual supernatant – same for all aspiration procedures below)
+2. Aspirate the media and resuspend the cells with 1ml of PBS. Centrifuge.
+2. Aspirate and resuspend the cells in 100$\mu$l PBS+ 1%NGS.
+
+## Cell fixation
+1. Take chilled 100% EtOH to cold room.
+3. place the centrifuge tube on the vortex and add 900$\mu$l of 100% EtOH dropwise to tube.
+3. Mix well and keep the tube at 4&deg;C overnight.
+
+## Click-iT reaction
+1. Centrifuge 5 min, 1000 rpm, RT, then aspirate supernatant completely.
+4. Add 1ml of 0.5% Triton X-100/PBS, resuspend by tapping.
+2. Add 0.5 ml of 1% BSA/PBS and incubate for 30 minutes at RT (blocking)
+4. Meanwhile prepare click chemistry cocktail <15 minutes before use.
+    - Mix the ingredients in the __following order__.
+  
+| Component | For 1000$\mu$l |
+|:----------|:-----------:|
+|1X Click-iT reaction Buffer| 860$\mu$l |
+|CuSO~4~|40$\mu$l|
+|Alexa-488 azide (1mM)|4$\mu$l|
+|Reaction buffer additive (1X)| 100$\mu$l |
+
+6. Aspirate and resuspend the cells in 500$\mu$l of the cocktail and incubate for 30 minutes at RT in dark.
+4. Wash twice with 1ml of PBS.
+
+## PI staining
+1. Discard supernatant and resuspend cell pellet in 1ml PBS containing 10 $\mu$g/ml RNase A and 20 $\mu$g/ml PI stock solution, transfer to FACS tubes and incubate at room temperature (RT) in the dark for 30 min. (For “EdU-only”, just add PBS).
+20. Transfer to a 5 ml Falcon 2054 FACS tube for FACS/LSRII analysis.
+21. Adjust concentration to 2 x 106 /ml by adding 5 $\mu$g/ml PI in PBS.
+

@@ -1,0 +1,82 @@
+---
+title: "Protocols for attaching cells to coverslip"
+author: "Omid Gholamalamdari, Belmont lab, UIUC"
+date: "`r format(Sys.time(), 'Updated on %d/%m/%Y')`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+bibliography: bib.bib
+csl: nature.csl
+---
+
+```{r global_options, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+
+# Introduction
+There are times that we need to attached cells to coverslips for imaging.
+This could be used for studying cells usually cultured in suspension like K562 cells.
+Also there some times that you want to re-attach cells that are already fixed but were not grown on coverslip. Fro example in Andy Belmont lab we regularly do label cells in big falsk but for checking the quality of such labelling with microscopy we need to attach some of these labelled cells to coverslip.
+Here I'm presenting to protocols that I have developed in Andy's lab for K562 cells.
+
+
+## Protocol 1: poly-L-Lysine treatment of coverslips
+From [Sigma website](https://www.sigmaaldrich.com/catalog/product/sigma/p4707?lang=en&region=US&cm_sp=Insite-_-caContent_prodMerch_cooccuranceModel-_-prodMerch10-1): Poly-L-lysine is a nonspecific attachment factor for cells useful in promoting cell adhesion to solid substrates by enhancing electrostatic interaction between negatively charged ions of the cell membrane and the culture surface. When it is absorbed to the cell culture surface, poly-L-lysine functions to increase the number of positively charged sites available for cell binding. With cells that can digest poly-L-lysine, poly-D-lysine should be used as the attachment factor.
+Poly-L-lysine comes in different molecular weights. Lower molecular weight poly-L-lysine like 30-70K MW is less viscuous in solution, but higher molecular weight versions provide more attachment sites per molecule.
+
+### Materials
+
++ Poly-L-lysine 0.01%
+  - You can find the commercial solutions of 30-70K 
+  - Or powder of different MW
+  _ I have used 150-300K MW with good success.
++ Coverslips #1.5 
+  - I personally like 12mm circular ones. They are a bit pricy though.
+
+### Procedure
+
+1. Incubate coverslips in poly-L-Lysine solution for 30 minutes.
+2. Air dry for >24 hours.
+
+
+## Protocol 2: Cell-Tak treatment of coverslips
+Cell-Tak is a molusk protein that has adhesive properties.
+
+### Materials
+
++ Corning® Cell-Tak Cell Tissue Adhesive
++ Coverslips #1.5 
++ 2M Sodium carbonate
+
+### Procedure
+
+For 12 pair of 12mm coverslips mix as following:
+
+| Material                             | Amount          |
+|--------------------------------------|-----------------|
+| Cell-Tak stock (2.05$\mu$g/$\mu$l)   | 6$\mu$l          |
+| Molecular Biology Grade DW           | 42$\mu$l        |
+| 2M Sodium carbonate                  | 12$\mu$l        |
+| **Total Volume**                     | 60$\bf\mu$l     | 
+
+1. Mix well, Place 10$\mu$l in the center of a clean coverslip and put another one top. Making a sandwich with Cell-Tak mixture as the filling.
+1. Incubate for 30 min at RT.
+1. Separate the coverslips and put in 24 well plates, keeping the treatd surface facing up
+1. Air dry.
+1. Wash with DW.
+1. Air dry.
+
+## Seedig K562 cells
+
+This needs further optimization. But the following protocol has had success.
+
+1. Make K562 cell suspension in serum free media (1e6 cells/ml)
+1. place the previously prepared coverslips on rubber pedestals.
+1. Add 150$\mu$l of cell suspension to coverslips.
+1. Incubate for 20 minutes in CO~2~ incubator.
+1. Continue with FISH/IF.
+
