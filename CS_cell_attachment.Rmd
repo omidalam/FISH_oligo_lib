@@ -74,9 +74,9 @@ For 12 pair of 12mm coverslips mix as following:
 
 This needs further optimization. But the following protocol has had success.
 
-1. Make K562 cell suspension in serum free media (1e6 cells/ml)
+1. Make K562 cell suspension in complete media (1e6 cells/ml)
 1. place the previously prepared coverslips on rubber pedestals.
 1. Add 150$\mu$l of cell suspension to coverslips.
-1. Incubate for 20 minutes in CO~2~ incubator.
+1. Incubate for 20-30 minutes in CO~2~ incubator.
 1. Continue with FISH/IF.
 
